@@ -12,7 +12,7 @@ def get_ip():
 
 @app.route('/', methods=['POST'])
 def stress_cpu():
-    subprocess.Popen(["python", "stress_cpu.py"])
+    subprocess.Popen(["python3", "stress_cpu.py"])
     return "CPU stress initiated.", 202
 
 if __name__ == '__main__':
